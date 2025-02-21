@@ -1,0 +1,11 @@
+:root {
+    --max-width: 1200px;
+}
+
+.navbar {
+}
+
+.nav-center {
+    width: 90vw;
+    max-width: var(--max-width);
+}
