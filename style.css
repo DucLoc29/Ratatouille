@@ -3,9 +3,13 @@
 }
 
 .navbar {
+    display: flex; /* Thiết lập phần tử navbar như là một container Flexbox. */
+    justify-content: center; /*Căn giữa các phần tử con theo trục chính (trục ngang) của container Flexbox.*/
+    align-items: center; /*Căn giữa các phần tử con theo trục phụ (trục dọc) của container Flexbox*/
 }
 
 .nav-center {
     width: 90vw;
     max-width: var(--max-width);
+    background: rgb(228, 226, 221);
 }
