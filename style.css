@@ -1,15 +1,69 @@
+/* VVariables */
 :root {
-    --max-width: 1200px;
+    --green-color: #3cd815;
+    --light-green-color: #c0eb7b;
+    --orange-color: ;
+    --light-orange-color: #ff7e00;
+    --text-color: #1a2428;
+    --bg-color: #fff;
+    --bg-header-color: #e4e2dd;
 }
 
-.navbar {
-    display: flex; /* Thiết lập phần tử navbar như là một container Flexbox. */
-    justify-content: center; /*Căn giữa các phần tử con theo trục chính (trục ngang) của container Flexbox.*/
-    align-items: center; /*Căn giữa các phần tử con theo trục phụ (trục dọc) của container Flexbox*/
+body {
+    color: var(--text-color);
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-header-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 40%);
+    padding: 0px 100px;
+    transition: 0.5s;
 }
 
-.nav-center {
-    width: 90vw;
-    max-width: var(--max-width);
-    background: rgb(228, 226, 221);
+.logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-left: 150px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    column-gap: 0.5rem;
+}
+.nav-list ul a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
 }
