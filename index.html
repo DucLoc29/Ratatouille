@@ -23,12 +23,14 @@
         <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
 
-        <!-- Link to files -->
-        <script src="./js.js" defer></script>
         <link rel="stylesheet" href="style.css" />
 
         <!-- Box Icon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <!-- nav -->
@@ -43,7 +45,7 @@
 
             <div class="bx bx-menu" id="menu-icon"></div>
             <!-- Nav List -->
-            <div class="nav-list">
+            <div class="navbar">
                 <ul>
                     <li><a href="index.html" class="home-active">Home</a></li>
                     <li><a href="recipes.html">Recipe</a></li>
@@ -60,5 +62,56 @@
             </div>
         </header>
         <!-- nav of end -->
+
+        <!-- Home -->
+        <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Foods of the day</span>
+                        <h1>Cơm sốt cà ri</h1>
+                        <p>Cơm sốt cà ri là món ăn thơm ngon với cơm trắng dẻo kết hợp cùng sốt cà ri đậm đà, béo nhẹ. Sốt được nấu từ thịt, khoai tây, cà rốt và gia vị đặc trưng, tạo nên hương vị cay nhẹ, hấp dẫn</p>
+                        <p>Thời gian nấu: 20 phút</p>
+                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                    <img src="img/slide1.webp" alt="Slide 1" />
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Foods of the day</span>
+                        <h1>Gumbo hải sản</h1>
+                        <p>Gumbo hải sản là món súp đậm đà của ẩm thực Louisiana, kết hợp tôm, xúc xích, rau củ và gia vị Cajun đặc trưng. Nước dùng sánh mịn, thơm lừng, thấm đẫm hương vị cay nồng và ngọt tự nhiên từ hải sản.</p>
+                        <p>Thời gian nấu: 1 tiếng</p>
+                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                    <img src="img/slide2.webp" alt="Slide 2" />
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Foods of the day</span>
+                        <h1>Bánh sừng bò nhân kem</h1>
+                        <p>Bánh sừng bò nhân kem là món bánh ngọt thơm ngon với lớp vỏ bơ giòn rụm và nhân kem mịn màng, béo ngậy bên trong. Khi cắn vào, lớp vỏ xốp tan hòa quyện cùng vị ngọt dịu của kem, tạo nên trải nghiệm ẩm thực hấp dẫn.</p>
+                        <p>Thời gian nấu: 2 tiếng</p>
+                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                    </div>
+                    <img src="img/slide3.webp" alt="Slide 3" />
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Link to files -->
+        <script src="./js.js" defer></script>
     </body>
 </html>

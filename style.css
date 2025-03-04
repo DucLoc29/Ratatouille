@@ -1,12 +1,18 @@
 /* VVariables */
 :root {
     --green-color: #3cd815;
+    --gray-color: #4a4a48;
     --light-green-color: #c0eb7b;
     --orange-color: ;
     --light-orange-color: #ff7e00;
     --text-color: #1a2428;
+    --home-text-color: #fff;
     --bg-color: #fff;
     --bg-header-color: #e4e2dd;
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
 }
 
 body {
@@ -24,6 +30,7 @@ header {
     box-shadow: 0 8px 11px rgb(14 55 54 / 40%);
     padding: 0px 100px;
     transition: 0.5s;
+    z-index: 10001;
 }
 
 .logo {
@@ -56,14 +63,75 @@ header {
     font-weight: 500;
 }
 
-.nav-list ul {
+.navbar ul {
     list-style: none;
     display: flex;
     column-gap: 0.5rem;
 }
-.nav-list ul a {
+
+.navbar ul a {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
     padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar .home-active {
+    background-color: var(--gray-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+    transition: background 0.5s;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.container img {
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    /* position: absolute; */
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.home-text {
+    color: var(--home-text-color);
+    max-width: 300px;
+    padding: 0 150px;
+}
+
+.home-text span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.home-text a {
+    color: var(--home-text-color);
+    text-decoration: none;
 }
