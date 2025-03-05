@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ratatouille</title>
 
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png" />
@@ -23,81 +24,90 @@
         <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <!-- Style css -->
         <link rel="stylesheet" href="style.css" />
-
-        <!-- Box Icon -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Box Icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     </head>
     <body>
-        <!-- nav -->
+        <!-- Navigation -->
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/ratatouille original.png" alt="Ratatouille" />
-                </a>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary header-nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="img/ratatouille original.png" alt="Logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <!-- Menu Icon -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link" href="#">Recipe</a>
+                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">About us</a>
+                        </ul>
+                    </div>
 
-            <div class="bx bx-menu" id="menu-icon"></div>
-            <!-- Nav List -->
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html" class="home-active">Home</a></li>
-                    <li><a href="recipes.html">Recipe</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about-us.html">About us</a></li>
-                </ul>
-            </div>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="img/ratatouille icon.png" alt="Remy" />
-                <span>Remy</span>
-                <i class="bx bx-caret-down"></i>
-            </div>
+                    <!-- Profile -->
+                    <div class="profile">
+                        <img src="img/ratatouille icon.png" alt="Remy" />
+                        <span>Remy</span>
+                        <i class="bx bx-caret-down"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <!-- nav of end -->
+        <!-- End of navigation -->
 
-        <!-- Home -->
+        <!-- Home Swiper-->
         <section class="home swiper" id="home">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide container">
+                <div class="swiper-slide slide-container">
                     <div class="home-text">
                         <span>Foods of the day</span>
                         <h1>Cơm sốt cà ri</h1>
                         <p>Cơm sốt cà ri là món ăn thơm ngon với cơm trắng dẻo kết hợp cùng sốt cà ri đậm đà, béo nhẹ. Sốt được nấu từ thịt, khoai tây, cà rốt và gia vị đặc trưng, tạo nên hương vị cay nhẹ, hấp dẫn</p>
                         <p>Thời gian nấu: 20 phút</p>
-                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="#">
+                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
+                        </a>
                     </div>
+
                     <img src="img/slide1.webp" alt="Slide 1" />
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide container">
+                <div class="swiper-slide slide-container">
                     <div class="home-text">
                         <span>Foods of the day</span>
                         <h1>Gumbo hải sản</h1>
                         <p>Gumbo hải sản là món súp đậm đà của ẩm thực Louisiana, kết hợp tôm, xúc xích, rau củ và gia vị Cajun đặc trưng. Nước dùng sánh mịn, thơm lừng, thấm đẫm hương vị cay nồng và ngọt tự nhiên từ hải sản.</p>
                         <p>Thời gian nấu: 1 tiếng</p>
-                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="#">
+                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
+                        </a>
                     </div>
                     <img src="img/slide2.webp" alt="Slide 2" />
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="swiper-slide container">
+                <div class="swiper-slide slide-container">
                     <div class="home-text">
                         <span>Foods of the day</span>
                         <h1>Bánh sừng bò nhân kem</h1>
                         <p>Bánh sừng bò nhân kem là món bánh ngọt thơm ngon với lớp vỏ bơ giòn rụm và nhân kem mịn màng, béo ngậy bên trong. Khi cắn vào, lớp vỏ xốp tan hòa quyện cùng vị ngọt dịu của kem, tạo nên trải nghiệm ẩm thực hấp dẫn.</p>
                         <p>Thời gian nấu: 2 tiếng</p>
-                        <a href="#" class="btn">Check now<i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="#">
+                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
+                        </a>
                     </div>
                     <img src="img/slide3.webp" alt="Slide 3" />
                 </div>
@@ -107,11 +117,19 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </section>
+        <!-- End of home swiper -->
 
+        <!-- Trending now -->
+        <section class="Trending-now">
+            <div class="separator"></div>
+            <h1>TRENDING NOW</h1>
+        </section>
+        <!-- End of trending now -->
+
+        <script src="js.js" defer></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Link to files -->
-        <script src="./js.js" defer></script>
     </body>
 </html>
