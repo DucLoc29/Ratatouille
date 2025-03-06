@@ -4,6 +4,8 @@
     --gray-color: #4a4a48;
     --bg-color: #fff;
     --swiper-text-color: #fff;
+    --separator-color: #bfbfbf;
+    --max-width-website: 85%;
 }
 
 header {
@@ -90,8 +92,8 @@ body {
 /* ================= Home swiper ================== */
 .swiper {
     margin-top: 100px;
-    width: 95%; /* Thu nhỏ lại */
-    height: 520px;
+    width: var(--max-width-website);
+    height: 650px;
 }
 
 .slide-container {
@@ -111,8 +113,9 @@ body {
 }
 
 .slide-container img {
-    height: 400px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     object-fit: cover;
     border-radius: 5%;
 }
@@ -136,8 +139,47 @@ body {
 /* =============== Trending now ================ */
 
 .separator {
-    width: 100%;
-    height: 20px;
-    background-color: #ddd; /* Màu xám */
-    margin: 20px 0; /* Khoảng cách */
+    width: var(--max-width-website);
+    border: none;
+    height: 35px;
+    background-color: var(--separator-color);
+    margin: 35px auto 10px auto;
+}
+
+.trending-now-wrapper {
+    width: var(--max-width-website);
+    margin: 35px auto;
+}
+
+.trending-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trending-card-wrapper .card {
+    width: 18rem;
+    height: 18rem;
+}
+
+.trending-card-wrapper .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.trending-card-wrapper .card a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.trending-card-wrapper .card-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ============== DONT MISS ================= */
+.dont-miss-wrapper {
+    width: var(--max-width-website); /*85%*/
+    margin: 35px auto;
 }
