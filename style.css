@@ -183,3 +183,108 @@ body {
     width: var(--max-width-website); /*85%*/
     margin: 35px auto;
 }
+
+.dont-miss-wrapper .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dont-miss-wrapper .card {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    border: none;
+    overflow: hidden;
+}
+
+.dont-miss-wrapper .card .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.dont-miss-wrapper .card-container .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.dont-miss-wrapper .card-container .card .card-img-overlay {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dont-miss-wrapper .card-container .card .card-img-overlay .card-subtitle {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dont-miss-wrapper .card-container .card .card-img-overlay .card-title {
+    font-size: 50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* =============== Explore more =================== */
+.explore-more-wrapper {
+    width: var(--max-width-website);
+    margin: 35px auto;
+}
+
+.explore-more-wrapper .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explore-more-wrapper .card {
+    width: 18rem;
+    height: 18rem;
+}
+
+.explore-more-wrapper .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.explore-more-wrapper .card a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.explore-more-wrapper .card-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ================ Fan favorite =============== */
+
+.favorite-wrapper {
+    width: var(--max-width-website);
+    margin: 35px auto;
+}
+
+.favorite-wrapper .fetured-recipe-collection {
+    width: 100%;
+    height: 450px;
+}
+
+.favorite-wrapper .fetured-recipe-collection img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
