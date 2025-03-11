@@ -10,7 +10,7 @@
 
 header {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-color: var(--bg-header-color);
     z-index: 10001;
 }
@@ -330,9 +330,16 @@ body {
     justify-content: space-between;
 }
 
+.fan-favorites-wrapper .card-container .row {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 25px;
+}
+
 .fan-favorites-wrapper .card {
-    width: 18rem;
-    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .fan-favorites-wrapper .card img {
@@ -345,8 +352,104 @@ body {
     color: var(--text-color);
 }
 
-.fan-favorites-wrapper .card-text {
+.fan-favorites-wrapper .card-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
+}
+
+/* =================== Footer ================= */
+footer {
+    background-color: var(--bg-header-color);
+    padding: 0px;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 70px 30px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon a {
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icon a i {
+    font-size: 30px;
+    color: var(--gray-color);
+    opacity: 0.9;
+}
+
+.social-icon a:hover {
+    background-color: var(--gray-color);
+    transition: 0.5s;
+}
+
+.social-icon a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-nav {
+    margin: 30px 0px;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    list-style-type: none;
+}
+
+.footer-nav ul li a {
+    color: var(--text-color);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5;
+    cursor: pointer;
+}
+
+.footer-nav ul li a:hover {
+    opacity: 0.5;
+}
+
+.footer-bottom {
+    background-color: var(--gray-color);
+    padding: 15px 15px 1px 15px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: white;
+}
+
+.designer {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
