@@ -1,275 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ratatouille</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ratatouille</title>
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/ico/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png" />
-        <link rel="manifest" href="/ico/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <!-- Style css -->
-        <link rel="stylesheet" href="style.css" />
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <!-- Box Icon -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    </head>
-    <body>
-        <!-- Navigation -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary header-nav">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/index.html">
-                        <img src="img/ratatouille original.png" alt="Logo" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Box Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary header-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="img/ratatouille original.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                            <a class="nav-link" href="#">Recipe</a>
-                            <a class="nav-link" href="#">Blog</a>
-                            <a class="nav-link" href="#">Contact</a>
-                            <a class="nav-link" href="#">About us</a>
-                        </ul>
-                    </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="recipe.html">Recipe</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">About us</a>
+            </ul>
+          </div>
 
-                    <!-- Profile -->
-                    <div class="profile">
-                        <img src="img/ratatouille icon.png" alt="Remy" />
-                        <span>Remy</span>
-                        <i class="bx bx-caret-down"></i>
-                    </div>
+          <!-- Profile -->
+          <div class="profile">
+            <img src="img/ratatouille icon.png" alt="Remy" />
+            <span>Remy</span>
+            <i class="bx bx-caret-down"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of navigation -->
+
+    <!-- Home Swiper-->
+    <section class="home swiper" id="home">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide slide-container">
+          <div class="home-text">
+            <span>Foods of the day</span>
+            <h1>Cơm sốt cà ri</h1>
+            <p>
+              Cơm sốt cà ri là món ăn thơm ngon với cơm trắng dẻo kết hợp cùng
+              sốt cà ri đậm đà, béo nhẹ. Sốt được nấu từ thịt, khoai tây, cà rốt
+              và gia vị đặc trưng, tạo nên hương vị cay nhẹ, hấp dẫn
+            </p>
+            <p>Thời gian nấu: 20 phút</p>
+            <a href="#">
+              <button type="button" class="btn btn-light btn-check-now">
+                Check now <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </a>
+          </div>
+
+          <img src="img/slide1.webp" alt="Slide 1" />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide slide-container">
+          <div class="home-text">
+            <span>Foods of the day</span>
+            <h1>Gumbo hải sản</h1>
+            <p>
+              Gumbo hải sản là món súp đậm đà của ẩm thực Louisiana, kết hợp
+              tôm, xúc xích, rau củ và gia vị Cajun đặc trưng. Nước dùng sánh
+              mịn, thơm lừng, thấm đẫm hương vị cay nồng và ngọt tự nhiên từ hải
+              sản.
+            </p>
+            <p>Thời gian nấu: 1 tiếng</p>
+            <a href="#">
+              <button type="button" class="btn btn-light btn-check-now">
+                Check now <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </a>
+          </div>
+          <img src="img/slide2.webp" alt="Slide 2" />
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide slide-container">
+          <div class="home-text">
+            <span>Foods of the day</span>
+            <h1>Bánh sừng bò nhân kem</h1>
+            <p>
+              Bánh sừng bò nhân kem là món bánh ngọt thơm ngon với lớp vỏ bơ
+              giòn rụm và nhân kem mịn màng, béo ngậy bên trong. Khi cắn vào,
+              lớp vỏ xốp tan hòa quyện cùng vị ngọt dịu của kem, tạo nên trải
+              nghiệm ẩm thực hấp dẫn.
+            </p>
+            <p>Thời gian nấu: 2 tiếng</p>
+            <a href="#">
+              <button type="button" class="btn btn-light btn-check-now">
+                Check now <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </a>
+          </div>
+          <img src="img/slide3.webp" alt="Slide 3" />
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- End of home swiper -->
+
+    <!-- Trending -->
+    <section class="Trending">
+      <hr class="separator" />
+      <div class="trending-now-wrapper">
+        <div class="Trending-now-title">
+          <h2>XU HƯỚNG</h2>
+        </div>
+        <div class="trending-card-wrapper">
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/trending-now.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <p class="card-text">Bánh waffle siro bơ</p>
+              </div>
+            </a>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/trending-now-2.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <p class="card-text">Bò hầm kiểu Pháp</p>
+              </div>
+            </a>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/trending-now-3.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <p class="card-text">Bánh táo crumble</p>
+              </div>
+            </a>
+          </div>
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/trending-now-4.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <p class="card-text">Chocolate mousse.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dont-miss-wrapper">
+        <div class="dont-miss-title">
+          <h2>ĐỪNG BỎ LỠ</h2>
+        </div>
+        <div class="card-container">
+          <div class="card text-bg-dark">
+            <a href="#">
+              <img
+                src="/img/dont-miss-1.webp"
+                class="card-img"
+                alt="Food image"
+              />
+              <div class="card-img-overlay">
+                <p class="card-subtitle">Bộ sưu tập</p>
+                <h3 class="card-title">Công thức ớt hầm ngon nhất</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card text-bg-dark">
+            <a href="#">
+              <img
+                src="/img/dont-miss-2.webp"
+                class="card-img"
+                alt="Food image"
+              />
+              <div class="card-img-overlay">
+                <p class="card-subtitle">Bộ sưu tập</p>
+                <h3 class="card-title">
+                  Công thức chế biến cà tím đầy sáng tạo
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div class="card text-bg-dark">
+            <a href="#">
+              <img
+                src="/img/dont-miss-3.webp"
+                class="card-img"
+                alt="Food image"
+              />
+              <div class="card-img-overlay">
+                <p class="card-subtitle">Bộ sưu tập</p>
+                <h3 class="card-title">Công thức nấu gà nhanh và dễ dàng</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-more-wrapper">
+        <div class="explore-more-title">
+          <h2>KHÁM PHÁ THÊM</h2>
+        </div>
+        <div class="card-container">
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/explore-more.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <h3 class="card-text">Gà Tikka sốt cà chua Masala</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/explore-more-2.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <h3 class="card-text">Thịt xông khói chay</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/explore-more-3.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <h3 class="card-text">Sốt Big Mac chuẩn vị McDonald</h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <a href="#">
+              <img
+                src="/img/explore-more-4.webp"
+                class="card-img-top"
+                alt="Food image"
+              />
+              <div class="card-body">
+                <p class="card-text">Thịt bò nướng hầm bằng nồi Crock-Pot</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of trending -->
+
+    <!-- Favorite -->
+    <section>
+      <hr class="separator" />
+      <div class="favorite-wrapper">
+        <a href="#">
+          <div class="card mb-3 fetured-recipe-collection">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/img/romatic-dinner.webp"
+                  class="img-fluid rounded-start"
+                  alt="Food image"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </p>
                 </div>
-            </nav>
-        </header>
-        <!-- End of navigation -->
-
-        <!-- Home Swiper-->
-        <section class="home swiper" id="home">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide slide-container">
-                    <div class="home-text">
-                        <span>Foods of the day</span>
-                        <h1>Cơm sốt cà ri</h1>
-                        <p>Cơm sốt cà ri là món ăn thơm ngon với cơm trắng dẻo kết hợp cùng sốt cà ri đậm đà, béo nhẹ. Sốt được nấu từ thịt, khoai tây, cà rốt và gia vị đặc trưng, tạo nên hương vị cay nhẹ, hấp dẫn</p>
-                        <p>Thời gian nấu: 20 phút</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
-                        </a>
-                    </div>
-
-                    <img src="img/slide1.webp" alt="Slide 1" />
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide slide-container">
-                    <div class="home-text">
-                        <span>Foods of the day</span>
-                        <h1>Gumbo hải sản</h1>
-                        <p>Gumbo hải sản là món súp đậm đà của ẩm thực Louisiana, kết hợp tôm, xúc xích, rau củ và gia vị Cajun đặc trưng. Nước dùng sánh mịn, thơm lừng, thấm đẫm hương vị cay nồng và ngọt tự nhiên từ hải sản.</p>
-                        <p>Thời gian nấu: 1 tiếng</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
-                        </a>
-                    </div>
-                    <img src="img/slide2.webp" alt="Slide 2" />
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="swiper-slide slide-container">
-                    <div class="home-text">
-                        <span>Foods of the day</span>
-                        <h1>Bánh sừng bò nhân kem</h1>
-                        <p>Bánh sừng bò nhân kem là món bánh ngọt thơm ngon với lớp vỏ bơ giòn rụm và nhân kem mịn màng, béo ngậy bên trong. Khi cắn vào, lớp vỏ xốp tan hòa quyện cùng vị ngọt dịu của kem, tạo nên trải nghiệm ẩm thực hấp dẫn.</p>
-                        <p>Thời gian nấu: 2 tiếng</p>
-                        <a href="#">
-                            <button type="button" class="btn btn-light btn-check-now">Check now <i class="bx bx-right-arrow-alt"></i></button>
-                        </a>
-                    </div>
-                    <img src="img/slide3.webp" alt="Slide 3" />
-                </div>
+              </div>
             </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- End of Favorite -->
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </section>
-        <!-- End of home swiper -->
-
-        <!-- Trending -->
-        <section class="Trending">
-            <hr class="separator" />
-            <div class="trending-now-wrapper">
-                <div class="Trending-now-title">
-                    <h2>XU HƯỚNG</h2>
-                </div>
-                <div class="trending-card-wrapper">
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/trending-now.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <p class="card-text">Bánh waffle siro bơ</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/trending-now-2.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <p class="card-text">Bò hầm kiểu Pháp</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/trending-now-3.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <p class="card-text">Bánh táo crumble</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/trending-now-4.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <p class="card-text">Chocolate mousse.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dont-miss-wrapper">
-                <div class="dont-miss-title">
-                    <h2>ĐỪNG BỎ LỠ</h2>
-                </div>
-                <div class="card-container">
-                    <div class="card text-bg-dark">
-                        <a href="#">
-                            <img src="/img/dont-miss-1.webp" class="card-img" alt="Food image" />
-                            <div class="card-img-overlay">
-                                <p class="card-subtitle">Bộ sưu tập</p>
-                                <h3 class="card-title">Công thức ớt hầm ngon nhất</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card text-bg-dark">
-                        <a href="#">
-                            <img src="/img/dont-miss-2.webp" class="card-img" alt="Food image" />
-                            <div class="card-img-overlay">
-                                <p class="card-subtitle">Bộ sưu tập</p>
-                                <h3 class="card-title">Công thức chế biến cà tím đầy sáng tạo</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card text-bg-dark">
-                        <a href="#">
-                            <img src="/img/dont-miss-3.webp" class="card-img" alt="Food image" />
-                            <div class="card-img-overlay">
-                                <p class="card-subtitle">Bộ sưu tập</p>
-                                <h3 class="card-title">Công thức nấu gà nhanh và dễ dàng</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="explore-more-wrapper">
-                <div class="explore-more-title">
-                    <h2>KHÁM PHÁ THÊM</h2>
-                </div>
-                <div class="card-container">
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/explore-more.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <h3 class="card-text">Gà Tikka sốt cà chua Masala</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/explore-more-2.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <h3 class="card-text">Thịt xông khói chay</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/explore-more-3.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <h3 class="card-text">Sốt Big Mac chuẩn vị McDonald</h3>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card" style="width: 18rem">
-                        <a href="#">
-                            <img src="/img/explore-more-4.webp" class="card-img-top" alt="Food image" />
-                            <div class="card-body">
-                                <p class="card-text">Thịt bò nướng hầm bằng nồi Crock-Pot</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End of trending -->
-
-        <!-- Favorite -->
-        <section>
-            <hr class="separator" />
-            <div class="favorite-wrapper">
-                <a href="#">
-                    <div class="card mb-3 fetured-recipe-collection">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/img/romatic-dinner.webp" class="img-fluid rounded-start" alt="Food image" />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <!-- End of Favorite -->
-
-        <script src="js.js" defer></script>
-        <!-- Bootstrap -->
-        <script src="js/bootstrap.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </body>
+    <script src="js.js" defer></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
