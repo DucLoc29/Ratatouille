@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe</title>
+    <title>Công thức</title>
 
     <!-- Favicon -->
     <link
@@ -94,19 +94,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-
-    <style>
-      /* Đảm bảo menu luôn hiển thị trên cùng */
-      .header-nav {
-        position: relative;
-        z-index: 1000;
-      }
-
-      /* Thêm khoảng cách giữa menu và nội dung header */
-      .header-content {
-        padding-top: 100px; /* Điều chỉnh giá trị này tùy thuộc vào chiều cao của menu */
-      }
-    </style>
   </head>
   <body>
     <!-- Navigation -->
@@ -130,26 +117,13 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="recipe.html"
-                  >Recipe</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
+              <a class="nav-link" href="/index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="/recipe.html"
+                >Recipe</a
+              >
+              <a class="nav-link" href="/blog.html">Blog</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link" href="/about-us.html">About us</a>
             </ul>
           </div>
 
@@ -163,22 +137,5 @@
       </nav>
     </header>
     <!-- End of navigation -->
-
-    <!-- Home Swiper -->
-    <section class="recipe">
-      <div class="intro container-recipe">
-        <div class="home-text">
-          <span>Foods of the day</span>
-          <h1>Cơm sốt cà ri</h1>
-          <p>
-            Cơm sốt cà ri là món ăn thơm ngon với cơm trắng dẻo kết hợp cùng sốt
-            cà ri đậm đà, béo nhẹ. Sốt được nấu từ thịt, khoai tây, cà rốt và
-            gia vị đặc trưng, tạo nên hương vị cay nhẹ, hấp dẫn
-          </p>
-          <p>Thời gian nấu: 20 phút</p>
-        </div>
-        <img src="#" alt="Slide 1" />
-      </div>
-    </section>
   </body>
 </html>
