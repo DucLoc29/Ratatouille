@@ -105,7 +105,7 @@ body {
     justify-content: space-between !important;
     padding: 130px;
 
-    background: url(img/background.jpg);
+    background: url(/assets/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -176,6 +176,11 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
+}
+
+.trending-card-wrapper .card:hover {
+    filter: brightness(0.9);
+    transition: 0.5s;
 }
 
 /* ============== DONT MISS ================= */
@@ -271,6 +276,11 @@ body {
     font-weight: 500;
 }
 
+.explore-more-wrapper .card:hover {
+    filter: brightness(0.9);
+    transition: 0.5s;
+}
+
 /* ================ Fan title =============== */
 
 .title-wrapper {
@@ -345,6 +355,11 @@ body {
 .fan-favorites-wrapper .card img {
     height: 200px;
     object-fit: cover;
+}
+
+.fan-favorites-wrapper .card:hover {
+    filter: brightness(0.9);
+    transition: 0.5s;
 }
 
 .fan-favorites-wrapper .card-container a {
